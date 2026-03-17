@@ -1,0 +1,15 @@
+[server]
+tcp_port = 9000
+http_port = 9001
+
+[queue]
+shard_count = 8
+
+[worker]
+min_workers = 4
+max_workers = 100
+idle_timeout_sec = 30
+
+[snapshot]
+path = data/snapshot.bin
+interval_sec = 30
